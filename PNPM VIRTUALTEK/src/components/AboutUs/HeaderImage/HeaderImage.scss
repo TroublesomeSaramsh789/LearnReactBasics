@@ -1,0 +1,48 @@
+.aboutUsMain{
+    position: relative;   
+}
+.headerImageWrap{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.headerImage{
+    object-fit: cover;
+    width: 100%;
+}
+.headerImageOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #0000004d;
+}
+.centerText {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7.5vmin;
+    font-weight: 700;
+    text-shadow: 0px 0px 20px rgb(0,0,0,0.80);
+    &--details{
+        @extend .centerText;
+        font-size:20px!important;
+        top: 30%;
+        font-weight: 200;
+    }
+   
+}
+
+@media (max-width:900px) {
+    .centerText{
+        font-size: 5.5vmin;
+    }
+}
+@media (max-width:600px) {
+    .centerText--details{
+        font-size: 14px!important;
+    }
+}

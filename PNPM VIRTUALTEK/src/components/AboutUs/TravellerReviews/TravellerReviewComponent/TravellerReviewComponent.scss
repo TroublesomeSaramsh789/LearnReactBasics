@@ -1,0 +1,26 @@
+
+.travellerReviewMain{
+    margin-top: 5%;
+    border: 1px solid #b7b7b7;
+    padding: 2%;
+    border-radius: 1%;
+    .avatarWrap {
+        margin-right: 16px;
+    }
+    
+    
+    
+    
+    .nameAvatarWrap {
+        display: flex;
+    }
+    
+    // .travellerReviewText{
+    //     width: 75%;
+    //     padding-bottom: 3%;
+    // }
+   
+    p.travellerReviewText {
+        padding: 0% 3% 2% 3%;
+    }
+}

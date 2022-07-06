@@ -1,0 +1,33 @@
+.destinationWishlistMain{
+    padding: 2% 5% 1% 4%;
+    .destinationCardDetail{
+        .textDetailDivWishlist{
+            margin-top: 0.5rem;
+        }
+        .TopicBookingWishlist{
+            font-weight: 500;
+            .textWishlist{
+                font-weight: 400!important;
+                color: #0A97D9;
+            }
+        }
+        box-shadow: 0px 2px 8px #00000029;
+        padding: 1.2rem;
+        border-radius: 1rem!important;
+        margin-bottom: 1rem;
+        .ant-col{
+            width: 100%;
+        }
+    }
+    .imageDivWishlist{
+        height: 9rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            
+        }  
+    }
+}

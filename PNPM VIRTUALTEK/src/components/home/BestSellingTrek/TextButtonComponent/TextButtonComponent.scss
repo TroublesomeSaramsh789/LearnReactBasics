@@ -1,0 +1,98 @@
+$pinkPrimary: #fd578d;
+.topicText {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 2%;
+}
+.iconText {
+    font-size: 1.2rem;
+    font-weight: 650;
+    color: $pinkPrimary !important;
+}
+.iconElement {
+    color: $pinkPrimary !important;
+}
+.priceBookDiv {
+    display: flex;
+}
+.bookButtonDiv {
+    margin-left: 20%;
+    .ant-btn{
+        border-radius: 0.4rem;
+        &:hover{
+            background-color: $pinkPrimary;
+            span{
+                color: white;
+            }
+        }
+        span{
+            color: $pinkPrimary;
+        }
+        border-color: $pinkPrimary;
+    }
+    
+}
+
+.btn-outline-secondary {
+    color: $pinkPrimary !important;
+    background-color: none !important;
+    border-color: $pinkPrimary !important;
+    border-width: 1px;
+}
+.btn-outline-secondary:hover {
+    background-color: $pinkPrimary !important;
+    color: white !important;
+}
+.crossed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+.boldblue {
+    color: rgb(10, 151, 217);
+    font-size: 1.4rem;
+}
+.textButtonMain {
+    padding: 2% 3%;
+}
+@media (max-width: 600px) {
+    .topicText {
+        font-size: 1.5rem;
+    }
+}
+.BookNowBtn {
+    margin-top: 20%;
+}
+.profilePictureDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .pictureDiv {
+        
+        width: 5rem;
+        height: 4rem;
+        margin-right: 1rem;
+        img {
+            
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+       
+    }
+    .ppTextDiv  {
+        p{
+            color: #1e9fdc;
+            font-size: 0.9rem;
+        }
+        
+    }
+}
+
+.moreAboutMe {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    margin: 0.5rem auto;
+}

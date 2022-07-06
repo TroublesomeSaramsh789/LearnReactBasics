@@ -1,0 +1,36 @@
+.testomonialMainDiv{
+    margin: auto;
+    max-width: 40rem;
+    width: 100%;
+    .avatartestomonial,.nametestomonial,.posttestomonial{
+        display: flex;
+        justify-content: center;
+    }
+    .nametestomonial{
+        margin-top: 1%;
+    }
+    .avatartestomonial{
+        margin-top: 3%;
+    }
+    .posttestomonial{
+        margin-top: -2%;
+        font-size: 0.8rem;
+        opacity: 0.9;
+    }
+    .testomonialMainText{
+        font-style: normal;
+        text-align: center;
+    }
+    .linetestomonialDiv{
+        margin-top: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;                                    
+        .linetestomonial{
+            border: 1px solid #0A97D9;
+            width:13rem;
+            // width: 100%;
+
+        }
+    }
+}

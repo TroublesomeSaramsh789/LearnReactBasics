@@ -1,0 +1,74 @@
+.bookDetailsCompWrap {
+    box-shadow: 0px 4px 10px #00000029;
+}
+.bookDetailsCompWrap {
+    @media (max-width:1000px) {
+        .buttonDiv{
+            margin-bottom:2% ;
+        }
+    }
+    
+    .row {
+        justify-content: center;
+        align-items: center;
+    }
+    @media (min-width: 600px) {
+        .buttonDiv {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .getBookingDD {
+            display: flex;
+            flex-direction: row-reverse;
+            font-size: 0.8rem;
+            color: #a1a1a1;
+        }
+    }
+    .getBookingDD {
+        font-size: 0.8rem;
+        color: #a1a1a1;
+    }
+
+    padding: 0.3% 3%;
+    .enquiryButton {
+        border: 1px solid #0c64a2;
+        padding: 5% 8%;
+        color: #0c64a2;
+    }
+    .bookNowButton {
+        border: 1px solid #fd578d;
+        padding: 5% 10%;
+        background: #fd578d;
+        color: white;
+       
+        a {
+            // color: #0d6efd;
+            color: white;
+            text-decoration: none;
+            :hover{
+                color: white;
+                
+            }
+        }
+        
+    }
+    span.buttonText {
+        font-size: 0.85rem;
+    }
+    span.priceDD {
+        color: dodgerblue;
+        font-size: 1.3rem;
+    }
+    .ratingText{
+        font-size: 0.99rem;
+    }
+    @media (max-width:576px) {
+       .buttonDiv{
+          
+            margin-top: 2%;   
+        width: 50%;
+           font-size: 0.7rem;
+       }
+        
+    }
+}

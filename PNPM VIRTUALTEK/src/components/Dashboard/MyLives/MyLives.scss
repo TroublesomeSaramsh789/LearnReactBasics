@@ -1,0 +1,25 @@
+.myLiveActionDiv{
+    .endliveButton{
+        :hover{
+            border: none;
+        }
+        button{
+     
+            background-color: #F31F1F;
+            color: white;
+            border: none;
+        }
+    }
+    .goToLiveButton{
+        margin-right: 0.5rem;
+        :hover{
+            border: none;
+        }
+        button{
+            
+            background-color: green;
+            color: white;
+            border: none;
+        }
+    }
+}

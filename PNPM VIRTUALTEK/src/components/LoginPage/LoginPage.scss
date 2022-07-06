@@ -1,0 +1,103 @@
+.mainLoginWrap {
+    .loginWrap {
+        /* height: 100%; */
+        width: 30rem;
+     
+        .form-group{
+            svg{
+                margin-right: 5px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    object-fit: cover;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .LoginBlockWrap {
+        .topIcon{
+            position: absolute;
+            box-shadow: 0px 3px 9px #00000029;
+            padding: 1.5%;
+            margin-top: -35px;
+            background: white;
+            border-radius: 50%;
+            color: #0A97D9;
+        }
+        position: absolute;
+        top: 25%;
+        left: 0%;
+
+        display: flex;
+        justify-content: center;
+
+        .loginform {
+            // border: 1px solid green;
+            padding: 7%;
+            background: white;
+            border-radius: 20px;
+            label {
+                margin-bottom: 15px;
+                margin-top: 15px;
+                font-size: 1.2rem;
+                font-weight: 401;
+            }
+            .loginButton{
+                border-color: #0A97D9!important;
+                color: #0A97D9!important;
+                padding-left: 10%!important;
+                padding-right: 10%!important;
+                border-radius: 5px;
+                font-weight: 401;
+            }
+            .loginButton:hover{
+                border-color:#0A97D9!important ;
+                background:#0A97D9!important;   
+                color: white!important;
+                
+            }
+            .forgetPassDiv{
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            .ant-form-item{
+                margin-bottom: 0px!important;
+            }
+            .moreWays {
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                justify-content: space-around;
+            }
+            input{
+                height: 40px;
+            }
+            .icons {
+                display: flex;
+                color: #FD578D;
+                /* justify-content: space-around; */
+                svg {
+                    margin-right: 10px;
+                }
+                svg:hover{
+                    transform: scale(1.2);
+                }
+            }
+
+        }
+        .forgetPassDiv {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .buttonDiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

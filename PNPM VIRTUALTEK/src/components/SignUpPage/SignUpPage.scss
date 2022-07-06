@@ -1,0 +1,76 @@
+.signUpPageWrap {
+   
+    .imageDivSignUp {
+        height: 50rem;
+        overflow: hidden;
+        img {
+            overflow: hidden;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .form-check-input[type="checkbox"] {
+        border-radius: 0rem;
+    }
+    .contactDiv {
+        display: flex;
+        justify-content: space-between;
+    }
+    .buttonDiv {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        button {
+            border-radius: 0;
+            background-color: #fd578d;
+            border-color: #fd578d;
+            color: white;
+            padding: 1% 35%;
+            font-size: 1rem;
+        }
+    }
+    .formDiv {
+        background-color: white;
+        // border: 1px solid #707070;
+        padding: 2% 5% 1% 5%;
+        // box-shadow: -3px 3px 10px #00000029;
+        border-radius: 1rem;
+    }
+    .loginOption {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 15%;
+        margin-bottom: 0 !important;
+        span.loginText {
+            color: #0a97d9;
+            font-weight: 500;
+        }
+    }
+    .title {
+        color: #003f6c;
+        margin-bottom: 10%;
+    }
+    @media (min-width: 992px) {
+        .formDiv {
+            // width: 50%;
+            // position: absolute;
+            // top: 20%;
+            // left: 37%;
+        }
+    }
+    @media (max-width: 992px) {
+        .imageDivSignUp {
+            display: none;
+         
+        }
+    
+    }
+}
+@media (max-width:992px) {
+    .signUpPageWrap{
+        margin-bottom: 2rem;
+    }
+}

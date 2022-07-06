@@ -1,0 +1,58 @@
+.moreAboutUsMainWrap {
+    .ulMenu {
+        li{
+            list-style: none;
+        }
+    }
+    .menuHeader {
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #344954;
+    }
+    .menuItem {
+        padding: 3.5%;
+        color: #787878;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+    .active {
+        background-color: #0a97d9;
+        color: white;
+    }
+    .selectMenu {
+        display: none;
+        margin-bottom: 5%;
+    }
+    @media (max-width: 850px) {
+        .ulMenu {
+            display: none;
+           
+        }
+        .selectMenu {
+            display: block;
+            // font-size: 1.8rem;
+            padding-left: 2%;
+            
+            font-size: 1.25rem;
+            select {
+                width: 100%;
+                border: none;
+               
+                box-shadow: 0px 3px 8px rgb(0 0 0 / 20%);
+                padding: 1%;
+                padding-right: 10%;
+                border-radius: 0.5rem;
+            }
+            select:focus{
+                border:0.1rem solid #0a97d9;
+            }
+            
+        }
+    }
+    @media (max-width: 850px) {
+        .menuHeader {
+            display: none;
+        }
+    }
+}

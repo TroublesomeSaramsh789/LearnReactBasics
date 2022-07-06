@@ -1,0 +1,74 @@
+.vlogImage {
+    object-fit: cover;
+}
+.textDiv {
+    // padding-left: 10%!important;
+    padding-top: 3%;
+    padding: 3% !important;
+    padding-right: 4% !important;
+}
+.vlogTitle {
+    text-align: center;
+}
+.vlogDetail {
+    padding-top: 10%;
+}
+.viewButton {
+    height: 9%;
+    width: 25%;
+    margin-top: 10%;
+
+    position: relative;
+}
+span.buttonInnerText {
+    position: absolute;
+    top: 15%;
+    font-size: 1.2rem;
+    left: 12%;
+}
+.blogButtonDiv {
+    button.ant-btn.ant-btn-primary {
+        background: white ;
+        border: 1px solid #fd578d;
+        color: #fd578d;
+       
+    }
+    button.ant-btn.ant-btn-primary:hover{
+        background: #fd578d;
+        color: white;
+    }
+    
+}
+@media (max-width: 600px) {
+    span.buttonInnerText {
+        font-size: 0.9rem;
+    }
+    .viewButton {
+        margin-top: 1%;
+        margin-bottom: 5%;
+    }
+}
+@media (max-width: 450px) {
+    span.buttonInnerText {
+        font-size: 0.8rem;
+    }
+    .viewButton {
+        margin-top: 1%;
+        margin-bottom: 5%;
+    }
+    span.buttonInnerText {
+        top: 25% !important;
+    }
+}
+@media (max-width: 400px) {
+    span.buttonInnerText {
+        font-size: 0.7rem;
+    }
+    .viewButton {
+        margin-top: 1%;
+        margin-bottom: 5%;
+    }
+    span.buttonInnerText {
+        top: 18% !important;
+    }
+}

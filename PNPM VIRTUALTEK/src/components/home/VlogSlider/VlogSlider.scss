@@ -1,0 +1,19 @@
+.vlogSliderContent{
+
+   
+}
+.imageDivSlider{
+    padding:1rem;
+    height: 400px;
+    img{
+        z-index:0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.video-slider{
+        z-index:0;
+        padding: 1rem
+}

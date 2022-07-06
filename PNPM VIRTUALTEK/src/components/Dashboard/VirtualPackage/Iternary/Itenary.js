@@ -1,0 +1,140 @@
+import { useState, useEffect } from 'react';
+import { Form, Input, Button, Table, Space, Row, Col } from 'antd'
+
+import { AiOutlinePlusCircle } from 'react-icons/ai'
+import { BsFillPencilFill } from 'react-icons/bs'
+import { ImBin } from 'react-icons/im'
+import { useParams } from 'react-router-dom'
+
+import { useEditItenaryVP, useUnitEditItenaryVP, useUnitDeleteItenaryVP } from '../../../../services/VirtualPackageManagementService'
+
+
+
+
+const { TextArea } = Input
+
+export default function Itenary({ data, mode }) {
+
+    const params = useParams()
+    const [formItenary] = Form.useForm()
+    const [activeItenary, setActiveItenary] = useState({})
+    const [modeInside, setModeInside] = useState('create')
+
+    useEffect(() => {
+
+        const formInitialValues = {
+            title: activeItenary?.title || "",
+            summary: activeItenary?.summary || "",
+            description: activeItenary?.description || "",
+        }
+        // formItenary.resetFields()
+        // setActiveItenary(null)
+        formItenary.setFieldsValue({
+            ...formInitialValues
+        })
+    }, [activeItenary])
+
+    const { mutate: addItenaryMutate, isLoading: loadingItenaryMutate } = useEditItenaryVP(params._id)
+    const { mutate: editUnitItenaryMutate, isLoading: loadingEditMutate } = useUnitEditItenaryVP(params._id)
+    const { mutate: deleteUnitItenaryMutate, isLoading: loadingDeleteMutate } = useUnitDeleteItenaryVP(params._id)
+
+    const addItenary = (values) => {
+
+        if (modeInside === "edit") {
+            editUnitItenaryMutate({ body: values, _id: activeItenary._id })
+            setModeInside("create")
+        } else {
+            addItenaryMutate(values)
+        }
+        setActiveItenary(null)
+    }
+    const editItenary = (record) => {
+
+        setActiveItenary(record)
+        setModeInside("edit")
+    }
+
+    const deleteItenary = (record) => {
+        deleteUnitItenaryMutate(record._id)
+    }
+    if (loadingItenaryMutate || loadingEditMutate || loadingDeleteMutate) {
+        return (
+            <div>
+                Loading...
+            </div>
+        )
+    }
+    const columns = [
+        {
+            title: 'SN',
+
+            key: 'index',
+            render: (text, record, index) => index + 1,
+        },
+        {
+            title: 'Day Title',
+            dataIndex: 'title',
+            key: 'title',
+        },
+        {
+            title: 'Day Summary',
+            dataIndex: 'summary',
+            key: 'summary',
+        },
+
+
+        {
+            title: 'Action',
+            key: 'action',
+            render: (text, record) => (
+                <Space size="middle">
+                    <a onClick={() => { editItenary(record) }}><BsFillPencilFill /></a>
+                    <a onClick={() => { deleteItenary(record) }}><ImBin /></a>
+                </Space>
+            ),
+        },
+    ];
+
+    return (
+        <div>
+            <Form
+                layout='vertical'
+                onFinish={addItenary}
+                form={formItenary}
+            >
+                <Form.Item
+                    label="Day Title"
+                    name="title"
+                    rules={[{ required: true, message: "Day Title is required" }]}
+                >
+                    <Input placeholder="Day Title" />
+                </Form.Item>
+
+
+
+                <Form.Item
+                    label="Day Summary"
+                    name="summary"
+                    rules={[{ required: true, message: "Summary is required" }]}
+                >
+                    <Input placeholder="Day Summary" />
+                </Form.Item>
+                <Form.Item
+                    label="Trip Route"
+                    name="description"
+                    rules = {[{ required: true, message: "Trip Route is required" }]}
+                >
+                    <TextArea/>
+                </Form.Item>
+            
+                <Form.Item wrapperCol={{ span: 12, offset: 6 }}>
+                    <Button type="primary" htmlType="submit">
+                        <span className='addSliderIcon'><AiOutlinePlusCircle className='inline-block' /></span>     {modeInside === "edit" ? "Edit" : "Add"}
+
+                    </Button>
+                </Form.Item>
+            </Form>
+            <Table columns={columns} dataSource={data.itinerary} />
+        </div>
+    )
+}

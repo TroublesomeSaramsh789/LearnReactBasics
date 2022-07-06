@@ -1,0 +1,58 @@
+.mainContact{
+    margin-top: 10%;
+    
+    color: #314651;
+    .form-row{
+        display: flex;
+    }
+    h3{
+        color: #314651;
+    }
+    .form-group {
+        margin-bottom: 2%;
+        label{
+            margin-bottom: 2%;
+        }
+    }
+   
+    .headingAux{
+        font-size: 0.9rem;
+        margin-bottom: 5%;
+    }
+    .emailComponent {
+        padding-right: 3%;
+    }
+    label {
+        font-size: 0.9rem;
+        /* margin-top: 10%; */
+        font-weight: 500;
+    }
+    @media (max-width:768px) {
+        .form-row{
+            display: block;
+        }
+        .emailComponent {
+            padding-right: 0%;
+        }
+
+    }
+    input.form-control, textarea.form-control {
+        font-size: 0.87rem;
+        padding: 1.5%;
+    }
+    .submitWrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 4%;
+        /* align-items: center; */
+        /* width: 26%; */
+    }
+    .submitWrap>button{
+        width: 32%;
+    }
+   .mapsDiv{
+       margin-top: 10%;
+       margin-bottom: 20%;
+   }
+   
+}

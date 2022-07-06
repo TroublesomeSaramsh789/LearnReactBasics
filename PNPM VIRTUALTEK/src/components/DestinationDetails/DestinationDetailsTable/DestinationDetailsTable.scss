@@ -1,0 +1,33 @@
+.destinationDetailsWrap{
+    
+    li{
+        list-style: disc;
+    }
+    table, th, td {
+        border: 1px solid #0A97D9;
+        border-collapse: collapse;
+      }
+      td{
+          width: 50%;
+          text-align:center ;
+          padding: 3.5%;
+      }
+      .groupTitle{
+          color: #707070;
+          font-weight: 500;
+          font-size: 1.2rem;
+      }
+      td.offerPrice {
+        font-size: 1.2rem;
+    }
+    span.offerPrice {
+        color: #FD578D;
+        font-size: 2rem;
+        font-weight: 550;
+    }
+    @media (max-width:768px) {
+        table{
+            width: 100%;
+        }
+    }
+}

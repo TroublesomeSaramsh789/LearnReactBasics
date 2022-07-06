@@ -1,0 +1,23 @@
+$primaryBlue:#0a97d9;
+
+.GroupSizeCompWrap {
+    display: flex;
+    justify-content: space-around;
+    .sizeComp {
+        
+        border: 1px solid $primaryBlue;
+        padding: 8% 4% 1% 4%;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    .sizeComp:hover{
+        animation: zoomeffect 0.3s linear forwards;
+    }
+    @keyframes zoomeffect {
+        from{transform: scale(1);}
+        to{transform: scale(1.1);}
+    }
+    .sizeComp.active {
+        border-width: 0.15rem;
+    }
+}

@@ -1,0 +1,84 @@
+.destinationDetails{
+    .similarTrip{
+        border: 2px solid #c6e7f6;
+        // display: flex;
+        margin-top: 60px;
+        .similarTripComp{
+            padding: 2%;
+            position: relative;
+            .similarTripImageWrap{
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .similarTripTitleWrap{
+                p{
+                    position: absolute;
+                    bottom: 7%;
+                    left: 11%;
+                    font-size: 1.3rem;
+                    color: white;
+                  
+                    width: 70%;
+                }
+            }
+
+            
+        }
+    }
+    .photoVideoDiv{
+        margin-top: 30px!important;
+    }
+    .destinationMainWrap{
+        margin-top: 30px!important;
+    }
+    a.goVirtualButton {
+        display: none!important;
+    }
+    .logoClip{
+        display: none;
+    }
+    .home_carousel{
+        margin-bottom: 0;
+        z-index: 0;
+    }
+    .addWishButtonWrap {
+        display: flex;
+        justify-content: end;
+        margin-right: 3%;
+        margin-top: -30px;
+        position: relative;
+        z-index: 1;
+        .wishlisted{
+            background: #fd578d;
+            color: white;
+            span{
+                color: white;
+            }
+        }
+        .disableButton{
+            pointer-events: none;
+        }
+
+    }
+    a.addWishButton {
+        padding: 1% 2%;
+        text-decoration: none;
+        color: #fd7ea7;
+        box-shadow: 0px 2px 10px #00000029;
+        background: white;
+        border-radius: 0.8rem;
+    }
+    .wishSpanText{
+        color: #314651;
+        font-size: 0.89rem;
+    }
+    @media (max-width:500px) {
+        .wishSpanText{
+            display: none;
+        }
+    }
+  
+    
+}

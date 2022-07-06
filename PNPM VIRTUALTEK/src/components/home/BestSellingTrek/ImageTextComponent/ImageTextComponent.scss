@@ -1,0 +1,84 @@
+.imageDiv {
+    position: relative;
+    // border-radius: 1rem !important;
+}
+.imageDivCard{
+    height: 15rem;
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.address {
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    color: white;
+    font-size: 1.15rem;
+}
+.time {
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    color: white;
+    font-size: 1rem;
+}
+.col-md-6.col-lg-4.imageTextMainDiv {
+    padding: 4% !important;
+    padding-top: 1% !important;
+    padding-bottom: 0% !important;
+}
+
+.imageDiv {
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+    .imageDivCard{
+        height: 15rem;
+        .imageDivCardOverlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background: #0000004d;
+        }
+    }
+    img {
+        // border-radius:1rem!important
+        transition: all 0.5s ease;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.2);
+        }
+        .overlayDiv{
+            border-radius: 1rem 1rem 0 0;
+        }
+    }
+
+    .overlayDiv {
+        
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        background: #0000004d;
+        border-radius: 1rem 1rem 0 0;
+    }
+    
+}
+.cardBoxShadow {
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 15%);
+    border-radius: 1rem;
+    padding: 0%;
+}
+@media (max-width: 600px) {
+    .address,
+    .time {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,15 @@
+.mainListingWrap{
+    .col-lg-3{
+        .topicText{
+            font-size: 1.3rem;
+        }
+        .price{
+            width: 120%;
+        }
+    }
+    @media (min-width:1000px) {
+        .bookButtonDiv {
+            margin-left: 15%;
+        }
+    }
+}

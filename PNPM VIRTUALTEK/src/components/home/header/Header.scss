@@ -1,0 +1,18 @@
+.headerMainWrap{
+    background-color: #0a97d9;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    button{
+        color: white;
+    }
+    a:hover{
+        color: #f5f5f5;
+        transform: scale(1.1);
+    }
+    button:hover{
+        color: #f5f5f5;
+        transform: scale(1.1);
+    }
+}

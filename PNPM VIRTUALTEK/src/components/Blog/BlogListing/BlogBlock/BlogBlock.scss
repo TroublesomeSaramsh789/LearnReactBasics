@@ -1,0 +1,32 @@
+.blogBlockHome{
+    .imageDivblogBlockHome {
+        height: 18rem;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        p.categoryInImage {
+            position: absolute;
+            top: 5%;
+            left: 4%;
+            background: #0A97D9;
+            color: white;
+            padding: 0.2% 1.2% 0.2% 1.2%;
+            border-radius: 0.4rem;
+        }
+    }    
+    .datePublishedBlogHome{
+        p{
+            opacity: 0.7;
+            font-size: 0.8rem;
+        }
+    }
+    .titleBlogHome{
+        p  {
+            color: #0A97D9;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+    }
+}

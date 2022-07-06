@@ -1,0 +1,92 @@
+
+.mainDiv{
+    
+    
+}
+
+.imageDiv{
+    position: relative;
+    margin-top:5%!important ;
+  
+}
+.imageDivPriorityTrek{
+  height: 18rem;
+    @media (max-width:400px) {
+        height: 15rem;
+    }
+}
+.titleTextDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 7%;
+    left: 1%;
+    width: 100%;
+}
+.titleText {
+    font-weight: 420;
+    font-size: 1.2rem;
+    color: white;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.daysRem{
+    position: absolute;
+    right: 10%;
+    top: 6%;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.imageOnlyDiv {
+    border-radius: 0% 15%  0% 15%;
+    overflow: hidden;
+    height: 100%;
+    
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+@media (max-width:600px){
+    .mainDiv>*{
+        width: 50%!important;
+    }
+    .titleTextDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 7%;
+        left: 1%;
+        width: 100%;
+    }
+    .titleText{
+        font-size: 0.9rem;
+        z-index: 100;
+
+    }
+    .daysRem{
+        font-size:0.8rem;
+        z-index:100;
+    }
+}
+@media (max-width:330px) {
+  
+    .titleText{
+        font-size: 0.7rem;
+    }
+}
+// .imageDiv{
+//     height: 30%;
+//     width: 25%;
+//     margin-top: 10%;
+//     background: #0000004D;
+//     border-radius: 0% 15%  0% 15%;
+//     margin: 1%;
+//     margin-top: 3%;
+  
+   
+// }

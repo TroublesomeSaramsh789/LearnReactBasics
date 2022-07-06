@@ -1,0 +1,42 @@
+.avatar {
+    border-radius: 50%;
+}
+.reviewName {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.ratingReview {
+    float: right !important;
+}
+.reviewComponentMain {
+    margin: 2% 20% 2% 20%;
+    padding: 1%;
+    box-shadow: -3px 3px 12px rgb(0 0 0 / 15%);
+    border-radius: 1rem;
+
+}
+
+.reviewText {
+    padding: 2% 9% 0% 9%;
+}
+.reviewBgImage{
+    object-fit: cover;
+}
+.reviewBackgroundWrap.row {
+    height: 26rem!important;
+    margin-bottom: 12%;
+}
+.reviewBgImage{
+    height: 100%;
+    opacity: 1;
+    border-radius: 1.8rem 0.8rem 0.8rem 1.8rem;
+}
+.reviewComponentMain {
+    // margin-top: -31%;
+    z-index: 999;
+    background-color: white;
+}
+
+.sliderDiv {
+    // margin-top: -35%;
+}

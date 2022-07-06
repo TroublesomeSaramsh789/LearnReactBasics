@@ -1,0 +1,18 @@
+.aboutUsContent{
+    padding-top: 3%;
+    @media (max-width:850px) {
+        
+        .col-md-8{
+            width: 100%!important;
+        }
+        .col-md-4{
+            width: 100%;
+        }
+    }
+}
+@media (max-width:850px) {
+    .aboutUsContent{
+        flex-direction: column-reverse!important;
+        width: 100%!important;
+    }
+}

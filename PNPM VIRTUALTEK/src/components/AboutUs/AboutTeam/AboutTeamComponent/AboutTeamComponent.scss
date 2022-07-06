@@ -1,0 +1,19 @@
+.aboutTeamCompWrap {
+  .aboutTeamCImg {
+    img {
+      object-fit: cover;
+      height: auto;
+      width: 100%;
+    }
+  }
+  .aboutText {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media (max-width:766px) {
+    .aboutText .headerText {
+      padding-top: 20px;
+    }
+  }
+}

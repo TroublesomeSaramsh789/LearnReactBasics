@@ -1,0 +1,36 @@
+.profilePageWrap {
+    .guideProfileEdit{
+        padding: 1% 1% 1% 1%;
+    }
+    background-color:white;
+    margin: 5% 10%;
+    box-shadow: 0px 0px 6px rgb(0,0,0, 0.15);
+    p.adminProfileHeading {
+        background: #0A97D9;
+        color: white;
+        padding: 1.5%;
+    }
+    .editProfile{
+        color: #FD578D;
+        cursor: pointer;
+    }
+    .imageDivProfile {
+        height: 150px;
+        width: 150px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    .imageButtonProfile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .changePasswordWrap {
+            margin-top: 30px;
+        }
+    }
+}

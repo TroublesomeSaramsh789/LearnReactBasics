@@ -1,0 +1,109 @@
+.menuItemsDDWrap {
+    cursor: pointer;
+    .ulMenu{
+        li{
+            list-style: none;
+        }
+        
+    }
+    ul {
+        padding-left: 0 !important;
+        display: flex;
+        // justify-content: space-around;
+        li {
+            border: 0.1rem solid #0a97d9;
+            color: #0a97d9;
+            padding: 1%;
+           
+        }
+    }
+    #active {
+        background: #0a97d9;
+        color: white;
+    }
+    select {
+        width: 100%;
+        border: none;
+        height: 50px;
+        box-shadow: 0px 3px 8px rgb(0 0 0 / 20%);
+        padding: 1%;
+        padding-right: 10%;
+        border-radius: 0.5rem;
+    }
+    select:focus {
+        border: 0.1rem solid #0a97d9;
+    }
+    .selectMenu {
+        display: none;
+    }
+
+    @media (max-width: 995px) {
+        .selectMenu {
+            display: block;
+            margin-bottom: 1rem;
+        }
+        .ulMenu {
+            display: none;
+            
+        }
+    }
+}
+.floatMenuWrap {
+    cursor: pointer;
+    .initialHide{
+        left: -100px!important;
+    }
+    .hide {
+        
+        animation: hideAnimation 0.5s linear forwards;
+    }
+    .show {
+        animation:showAnimation 0.5s linear forwards;     
+    }
+    @keyframes showAnimation {
+        from {
+            left: -100px;
+        }
+        to {
+            left: -30px;
+        }
+    }
+    @keyframes hideAnimation {
+        from {
+            left: -30px;
+        }
+        to {
+            left: -100px;
+        }
+    }
+    font-size: 45px;
+    ul.floatMenu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 20%;
+        left: -3%;
+       
+        li{
+            svg{
+                background:white ;
+            }
+        }
+    }
+    li svg {
+        box-shadow: 0px 3px 10px #00000029;
+        padding: 22%;
+        border-radius: 0px 10px 10px 0px;
+        
+    }
+    li svg:hover {
+        transform: scale(1.2);
+    }
+    #active > svg {
+        background: #0a97d9;
+        color: white;
+    }
+    li svg path {
+        pointer-events: none;
+    }
+}

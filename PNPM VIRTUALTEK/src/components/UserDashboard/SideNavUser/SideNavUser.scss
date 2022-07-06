@@ -1,0 +1,22 @@
+// #fafafa
+.sideNavUser{
+    .ant-layout-sider-children{
+        background-color: #ffffff;
+    }
+    .ant-layout-sider-trigger {
+ 
+        background: #0a97d9;
+
+    }
+    .ant-menu-item-selected{
+        background-color:#0a97d9!important;
+        color: white!important;
+        a:hover{
+            color: white;
+        }
+    }
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+}

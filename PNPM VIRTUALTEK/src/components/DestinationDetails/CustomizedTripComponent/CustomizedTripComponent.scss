@@ -1,0 +1,21 @@
+.customizedTripWrap{
+    border: 1px solid #0A97D9;
+    padding: 2%;
+    h4{
+        color: #0C64A2;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .btn-primary{
+        background-color: #FD578D;
+        border-color: #FD578D;
+        border-radius: 0;
+    }
+    .btn-primary:hover{
+        background-color: white;
+        color: #FD578D;
+        border-color: #FD578D;
+    }
+    
+}

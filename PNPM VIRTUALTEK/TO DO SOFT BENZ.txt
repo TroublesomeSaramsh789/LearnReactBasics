@@ -1,0 +1,53 @@
+1. site logo(settings)  ------------------------------------Done
+
+2. social links(settings)
+
+3. react router naming standards
+
+4. auth route--> after logged in dont show login register link become a guide and admin link  too  ---------------- DONE
+
+6. user link  on navbar should be change and dashboard -----------------------------------------------------------DONE
+
+7. loding image to be change --------------------------------Done
+
+8. strikeprice $ sign & price $ -----------------------------Done
+
+9. sign (price sign) -->show more not working
+
+10. hide 0 star ratings -------------------------------------Done
+
+11. traveller reviews ??? on about us
+
+12. Home page overflow --------------------------------------Done
+
+13. ongoing live list -> no api call is made
+
+14. normal trek list link
+
+15. time icon only shown--data of time needed
+
+16. remove unwanted link on footer----------------------------------Almost Complete
+
+17. guide listing ->> name of guide align to left --> icon resize to 24x24 ---------------Done
+
+18. contact us page-->> image here ?
+
+19. meet our team --> make more visible text for Designation------------------------------Done
+ 
+20. registered user list --> have bugs ---------------------------------------------------Done
+
+21. own profile details form validations & server error msg
+
+22. image slider/video slider on details of trek have bug on if image is less then 5 images ------------------DONE
+ 
+23. all trek details page--> trip highlight trip description if not found have title topics with empty content
+
+24. user guide wishlist dummy data
+
+25. And payment api (stripe)integration ----------------------------------------------------working
+
+
+araniko college -- > inside workshop
+
+
+

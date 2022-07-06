@@ -1,0 +1,28 @@
+$borderBlue:#b5dff3;
+
+.smallImage{
+    height: 30%!important;
+    width: 30%!important;
+}
+.title{
+    text-align: center;
+}
+.smallImageDiv{
+    justify-content: center!important;
+    padding-top: 10%;
+}
+.col-md-6.rightDiv {
+    padding-left: 7%!important;
+    padding-top: 1%!important;
+}
+.virtualTrekDetailDiv{
+    padding: 3%!important;
+    padding-top: 5%!important;
+    padding-bottom: 5%!important;
+    border: 0.1rem solid $borderBlue;
+    margin-top: 8%!important;
+}
+.detailText{
+    padding-top: 10%;
+    
+}

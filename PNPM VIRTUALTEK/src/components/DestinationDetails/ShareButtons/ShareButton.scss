@@ -1,0 +1,31 @@
+.shareButton {
+    padding: 2% 0%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    background: #FD578D;
+    color: white;
+    border-radius: 1rem;
+    p {
+        margin: 0;
+        margin-right: 12px;
+    }
+    ul.socialMediaMainDiv {
+        margin: 0;
+        padding: 0;
+        li{
+            margin: 0;
+            margin-right: 6px;
+            padding: 0;
+            display: inline-block;
+            border: 0.8px solid white;
+            border-radius: 50%;
+            margin-top: 7%;
+        }
+        svg {
+            padding: 18%;
+        }
+    }
+}

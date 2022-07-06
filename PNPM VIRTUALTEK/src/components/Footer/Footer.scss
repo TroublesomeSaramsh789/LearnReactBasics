@@ -1,0 +1,66 @@
+$footerBackground: #0a97d9;
+
+.mainFooterDiv {
+    .row{
+        --bs-gutter-x: 0rem;
+    }
+    
+    // width: 100%;
+    background-color: $footerBackground;
+    color: white;
+}
+.footerUpperDiv {
+    justify-content: center !important;
+    align-items: center !important;
+    border-bottom: 0.1rem solid white;
+    @media (max-width:800px) {
+        .rightfUD{
+            display: none;
+        }
+        .footerInput{
+            width: 50%;
+        }
+    }
+}
+.inputEmail {
+    padding: 10%;
+}
+input.footerInput.col-2 {
+    width: 40%;
+    border-radius: 0.5rem;
+    margin-right: 4%;
+    /* height: 107%; */
+}
+.subButton {
+    width: 35%!important;
+    border-color: white !important;
+    color: white !important;
+}
+.subButton:hover{
+    
+    background-color: #3482A7!important;
+}
+.footerLowerDiv{
+    .col {
+        // border-right: 0.1rem solid white;
+        position: relative;
+    }
+}
+.donationBlock {
+    padding-top: 7%;
+    padding-left: 8%;
+}
+.donationBlockTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.logo{
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 5%;
+    font-size: 1.5rem;
+
+}
+.contactFooter{
+    padding-left: 30%;
+}
